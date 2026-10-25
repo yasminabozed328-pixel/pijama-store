@@ -1,0 +1,358 @@
+
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="متجر بيجامات حريمي صيفي وشتوي ولانجري — اختاري القطعة والمقاس واطلبي بسهولة.">
+  <title>Pijama Store | بيجامات ولانجري</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+ 
+<body>
+  <div class="announcement">
+    أناقتك وراحتك في كل وقت
+    متاح شحن لجميع المحافظات
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="الصفحة الرئيسية">
+      <span>
+        <strong id="brand-name">Pijama Store</strong>
+        <small>بيجامات حريمي شتوي وصيفي &amp; لانجري</small>
+      </span>
+    </a>
+
+    <nav aria-label="التنقل">
+      <a href="#products">تسوقي المنتجات</a>
+      <a href="#about">عن المتجر</a>
+      <a href="#faq">الأسئلة الشائعة</a>
+    </nav>
+
+    <button class="cart-button" id="cart-jump" type="button">
+      السلة <span id="cart-count">0</span>
+    </button>
+  </header>
+
+  <main>
+
+
+
+<section class="hero">
+  <div class="hero-content">
+    <span class="hero-welcome">Welcome to Pijama Store</span>
+
+    <h1>مرحباً بكم في بيجامه ستور 💗</h1>
+
+    <p class="hero-description">
+      راحتك وأناقتك تبدأ من هنا!
+      اكتشفي أجمل البيجامات الشتوي والصيفي
+      واللانجري بتصميمات مميزة وأسعار تناسبك.
+    </p>
+
+    <a href="#products" class="hero-button">
+      تسوّقي المجموعة
+    </a>
+
+    <p class="hero-note">
+       اختاري إطلالتك المفضلة وخلي كل لحظة أرقّ 
+    </p>
+  </div>
+</section>
+
+    <section class="benefits" aria-label="مميزات المتجر">
+      <div>
+        <span>♡</span>
+        <strong>اختيارات مميزة</strong>
+        <small>تشكيلة مختارة بعناية</small>
+      </div>
+      <div>
+        <span>✦</span>
+        <strong>طلب سهل</strong>
+        <small>سجلي طلبك في دقائق</small>
+      </div>
+      <div>
+        <span>♧</span>
+        <strong>الدفع عند الاستلام</strong>
+        <small>ادفعي عند وصول طلبك</small>
+      </div>
+    </section>
+
+    <section class="best-sellers" id="best-sellers">
+      <span class="eyebrow">OUR BEST SELLERS</span>
+      <h2>الأكثر مبيعًا 💗</h2>
+      <p>اختاري من القطع المفضلة عند عميلاتنا</p>
+      <div class="product-grid" id="best-sellers-grid"></div>
+    </section>
+
+    <section class="products-section" id="products">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">THE COLLECTION</span>
+          <h2>اختاري قطعتك المفضلة</h2>
+        </div>
+        <p>الأسعار بالجنيه المصري · الصور والأسعار الحالية أمثلة قابلة للتعديل</p>
+      </div>
+
+      <div class="filters" role="group" aria-label="فلترة المنتجات">
+        <button class="filter active" data-filter="all">كل المنتجات</button>
+        <button class="filter" data-filter="winter">بيجامات شتوي</button>
+        <button class="filter" data-filter="summer">بيجامات صيفي</button>
+        <button class="filter" data-filter="lingerie">لانجري وقمصان نوم</button>
+      </div>
+
+      <div class="product-grid" id="product-grid"></div>
+    </section>
+
+    <section class="reviews-section" id="reviews">
+      <div class="reviews-container">
+        <h2>آراء عملائنا ❤️</h2>
+        <p>شوفوا تجارب عملائنا مع Pijama Store</p>
+
+        <div class="reviews-slider">
+          <button class="review-arrow" id="prevReview" aria-label="الصورة السابقة">❮</button>
+
+          <div class="review-image-box">
+            <img id="reviewImage" src="images/review1.jpeg" alt="تقييم أحد عملائنا">
+          </div>
+
+          <button class="review-arrow" id="nextReview" aria-label="الصورة التالية">❯</button>
+        </div>
+
+        <p class="review-counter" id="reviewCounter">1 / 7</p>
+      </div>
+    </section>
+
+    <section class="order-area" id="checkout">
+      <div class="order-intro">
+        <span class="eyebrow">YOUR ORDER</span>
+        <h2>سلتك وبيانات الطلب</h2>
+        <p>راجعي اختياراتك، وبعدها اكتبي بيانات التوصيل. الدفع عند الاستلام.</p>
+        <div class="secure-note">♡ بياناتك تُستخدم لتجهيز طلبك والتواصل معك بشأنه.</div>
+      </div>
+
+      <div class="checkout-card">
+        <div class="cart-lines" id="cart-lines">
+          <p class="empty-cart">لسه مفيش منتجات في السلة. اختاري قطعة من المجموعة فوق.</p>
+        </div>
+
+        <div class="cart-total">
+          <span>إجمالي المنتجات</span>
+          <strong id="cart-total">0 ج.م</strong>
+        </div>
+
+        <p class="shipping-note">
+          مصاريف الشحن تُحدد حسب المنطقة وتؤكد معك قبل الشحن.
+        </p>
+
+        <form id="order-form">
+          <div class="form-grid">
+            <label>
+              الاسم بالكامل
+              <input name="customer_name" required minlength="3" autocomplete="name" placeholder="اسمك بالكامل">
+            </label>
+
+            <label>
+              رقم الموبايل
+              <input name="phone" required inputmode="tel" autocomplete="tel" placeholder="01xxxxxxxxx" pattern="[0-9٠-٩+\-\s]{8,20}">
+            </label>
+
+         
+<label>
+  المحافظة والمنطقة
+  <select name="area" id="shipping-area" required>
+    <option value="">اختاري المنطقة</option>
+
+    <optgroup label="القاهرة والجيزة — شحن 70 جنيه">
+      <option value="فيصل">فيصل</option>
+      <option value="الهرم">الهرم</option>
+      <option value="بولاق الدكرور">بولاق الدكرور</option>
+      <option value="المهندسين">المهندسين</option>
+      <option value="وسط البلد">وسط البلد</option>
+      <option value="الزمالك">الزمالك</option>
+      <option value="أكتوبر">أكتوبر</option>
+      <option value="الشيخ زايد">الشيخ زايد</option>
+      <option value="حدائق الأهرام">حدائق الأهرام</option>
+      <option value="التجمع الخامس">التجمع الخامس</option>
+      <option value="مدينة نصر">مدينة نصر</option>
+      <option value="مصر الجديدة">مصر الجديدة</option>
+      <option value="حلوان">حلوان</option>
+      <option value="شبرا الخيمة">شبرا الخيمة</option>
+    </optgroup>
+
+    <optgroup label="شحن 75 جنيه">
+      <option value="مدينة المستقبل">مدينة المستقبل</option>
+      <option value="مدينتي">مدينتي</option>
+      <option value="الشروق">الشروق</option>
+      <option value="العبور">العبور</option>
+      <option value="القلج">القلج</option>
+      <option value="الرحاب">الرحاب</option>
+      <option value="الصف">الصف</option>
+      <option value="أطفيح">أطفيح</option>
+      <option value="العياط">العياط</option>
+      <option value="مدينة بدر">مدينة بدر</option>
+      <option value="المنصورية">المنصورية</option>
+    </optgroup>
+
+    <optgroup label="شحن 80 جنيه">
+      <option value="الإسكندرية">الإسكندرية</option>
+    </optgroup>
+
+    <optgroup label="شحن 85 جنيه">
+      <option value="كفر الشيخ">كفر الشيخ</option>
+      <option value="البحيرة">البحيرة</option>
+      <option value="بورسعيد">بورسعيد</option>
+      <option value="الدقهلية">الدقهلية</option>
+      <option value="المنوفية">المنوفية</option>
+      <option value="دمياط">دمياط</option>
+      <option value="القليوبية">القليوبية</option>
+      <option value="الغربية">الغربية</option>
+      <option value="الشرقية">الشرقية</option>
+      <option value="السويس">السويس</option>
+      <option value="الإسماعيلية">الإسماعيلية</option>
+    </optgroup>
+
+    <optgroup label="شحن 100 جنيه">
+      <option value="الفيوم">الفيوم</option>
+      <option value="المنيا">المنيا</option>
+      <option value="بني سويف">بني سويف</option>
+    </optgroup>
+
+    <optgroup label="شحن 105 جنيه">
+      <option value="أسيوط">أسيوط</option>
+      <option value="سوهاج">سوهاج</option>
+      <option value="قنا">قنا</option>
+      <option value="الأقصر">الأقصر</option>
+      <option value="أسوان">أسوان</option>
+    </optgroup>
+
+    <optgroup label="شحن 110 جنيه">
+      <option value="الساحل الشمالي">الساحل الشمالي</option>
+      <option value="مرسى مطروح">مرسى مطروح</option>
+    </optgroup>
+
+    <optgroup label="شحن 120 جنيه">
+      <option value="البحر الأحمر">البحر الأحمر</option>
+      <option value="الغردقة">الغردقة</option>
+      <option value="الوادي الجديد">الوادي الجديد</option>
+    </optgroup>
+  </select>
+</label>
+
+            <label class="full">
+              العنوان بالتفصيل
+              <textarea name="address" required rows="2" placeholder="الشارع، رقم العمارة، الدور، علامة مميزة"></textarea>
+            </label>
+
+            <label class="full">
+              ملاحظات للطلب (اختياري)
+              <textarea name="notes" rows="2" placeholder="اللون أو أي تفاصيل إضافية"></textarea>
+            </label>
+          </div>
+
+          <label class="consent">
+            <input type="checkbox" required>
+            أوافق على استخدام بياناتي للتواصل معي بخصوص هذا الطلب.
+          </label>
+
+          <button class="primary-button submit-order" type="submit" id="submit-order">
+            تأكيد الطلب — الدفع عند الاستلام
+          </button>
+
+          <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+          <div id="order-confirmation" class="order-confirmation" hidden>
+  <h2>♡ طلبك اتأكد يا قمر ♡</h2>
+  <p>شكرًا لثقتك في Pijama Store</p>
+
+  <div id="confirmation-items"></div>
+
+  <div class="confirmation-row">
+    <span>إجمالي المنتجات</span>
+    <strong id="confirmation-subtotal">0 جنيه</strong>
+  </div>
+
+  <div class="confirmation-row">
+    <span>مصاريف الشحن</span>
+    <strong id="confirmation-shipping">0 جنيه</strong>
+  </div>
+
+  <div class="confirmation-row confirmation-total">
+    <span>الإجمالي شامل الشحن</span>
+    <strong id="confirmation-total">0 جنيه</strong>
+  </div>
+
+  <p>الدفع عند الاستلام 💗</p>
+  <p>في حالة عدم الاستلام بيتم دفع مصاريف الشحن للمندوب</p>
+  
+</div>
+        </form>
+      </div>
+    </section>
+
+    <section class="about-strip" id="about">
+      <span class="about-heart">♡</span>
+      <div>
+        <h2>راحة تليق بيكي</h2>
+        <p>
+          متجر متخصص في البيجامات الحريمي الصيفي والشتوي واللانجري.
+          اختاري القطعة المناسبة ليكي واستمتعي بتجربة تسوق سهلة.
+        </p>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <span class="eyebrow">NEED TO KNOW</span>
+      <h2>أسئلة شائعة</h2>
+
+      <details>
+        <summary>إزاي أدفع؟</summary>
+        <p>الدفع عند الاستلام في النسخة الحالية.</p>
+      </details>
+
+      <details>
+        <summary>مصاريف الشحن كام؟</summary>
+        <p>بتختلف حسب المنطقة وشركة الشحن، وسيتم تأكيدها معك قبل إرسال الطلب.</p>
+      </details>
+
+      <details>
+        <summary>هل الطلب اتسجل؟</summary>
+        <p>بعد تفعيل قاعدة البيانات، ستظهر رسالة نجاح عند حفظ الطلب. اختبري الطلبات قبل تشغيل الإعلانات.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#">
+      <span class="brand-mark">♡</span>
+      <span>
+        <strong id="footer-brand">Pijama Store</strong>
+        <small>LOUNGEWEAR &amp; LINGERIE</small>
+      </span>
+    </a>
+
+    <p>© <span id="year"></span> جميع الحقوق محفوظة.</p>
+    <a href="#products">العودة للتسوق ↑</a>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  
+<a
+  class="floating-facebook"
+  href="https://www.facebook.com/share/1FR7bQ5PdM/?mibextid=wwXIfr"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="تابعينا على فيسبوك"
+>
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path fill="currentColor" d="M13.5 21v-8h2.7l.4-3h-3.1V8.1c0-.9.3-1.5 1.6-1.5h1.6V3.9c-.3 0-1.3-.1-2.4-.1-2.5 0-4.2 1.5-4.2 4.3V10H7.3v3h2.8v8h3.4z"/>
+  </svg>
+</a>
+
+  <script src="app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</body>
+</html>
